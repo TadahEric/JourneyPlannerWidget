@@ -26,10 +26,6 @@ namespace TfLJourneyPlanner.Hooks
             return _webDriverWait.Until(ExpectedConditions.ElementExists(locator));
         }
 
-       /* protected IWebElement waitAndFindElements(By locator)
-        {
-            //return _webDriverWait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(locator));   
-        }*/
         [BeforeScenario]
         public void StartWebDriver()
         {
